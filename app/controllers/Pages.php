@@ -1,7 +1,7 @@
 <?php
 
 
-class Pages
+class Pages extends Controller
 {
 
     /**
@@ -9,14 +9,16 @@ class Pages
      */
     public function __construct()
     {
-        echo 'page clas lis loaded<br>';
+        echo 'page class is loaded<br>';
     }
 
     public function index(){
         echo 'index mehod is loaded<br>';
+        $this->view('index');
     }
 
     public function about(){
         echo 'about mehod is loaded<br>';
+        $this->view('about');
     }
 }
